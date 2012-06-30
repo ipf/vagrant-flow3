@@ -19,7 +19,7 @@ execute "wget http://sourceforge.net/projects/flow3/files/latest/download -O /va
 execute "cd /var/www/ && sudo tar xjf flow3.tar.bz2 --strip-components=1"
 execute "cd /var/www/ && sudo ./flow3 core:setfilepermissions vagrant www-data www-data"
 
-# execute "cp /vagrant/files/000-default /etc/apache2/sites-enabled"
+execute "cp /vagrant/cookbooks/flow3/files/files/000-default /etc/apache2/sites-enabled"
 
 service "apache2" do
 	notifies :restart, "service[apache2]", :immediately
