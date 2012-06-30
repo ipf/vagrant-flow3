@@ -3,7 +3,7 @@ TYPO3:
     persistence:
       backendOptions:
         driver: 'pdo_mysql'
-        dbname: 'quickstart' # adjust to your database name
+        dbname: 'flow3' # adjust to your database name
         user: 'root'         # adjust to your database user
         password: 'flow3' # adjust to your database password
         host: '127.0.0.1'    # adjust to your database host
