@@ -50,7 +50,7 @@ cookbook_file "/var/www/Configuration/Settings.yaml" do
 end
 
 execute "mysql -uroot -pflow3 -e 'CREATE DATABASE flow3;'"
-"
+
 execute "cd /var/www/ && sudo ./flow3 doctrine:migrate"
 
 service "apache2" do
